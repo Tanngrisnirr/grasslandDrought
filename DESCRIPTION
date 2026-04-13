@@ -1,0 +1,27 @@
+Package: grasslandDrought
+Title: Streamlined Analysis of Grassland Drought Effects
+Version: 0.1.0
+Authors@R:
+    person("Olivier", "Ruiz", , "hymenopteres.entomo@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = ""))
+Description: Wraps the nlme::lme() workflow for analyzing grassland drought
+    experiments with nested random effects. Provides functions for importing
+    UREP-format Excel datasets, calculating relative soil water content (RSWC)
+    and climatic water balance (P-PET), running treatment x date mixed models,
+    generating diagnostic plots, and exporting structured results to JSON.
+    Based on the methodology of Picon-Cochard et al. (2021)
+    <doi:10.24072/pcjournal.54>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    nlme,
+    emmeans,
+    readxl,
+    jsonlite,
+    ggplot2
+Suggests:
+    patchwork
+URL: https://github.com/Tanngrisnirr/grasslandDrought
+BugReports: https://github.com/Tanngrisnirr/grasslandDrought/issues
