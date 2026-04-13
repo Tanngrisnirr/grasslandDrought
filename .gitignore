@@ -18,6 +18,9 @@ data/*.xlsx
 # Scripts
 remove_ai_attribution.sh
 
+# Build archives
+archive/
+
 # OS
 .DS_Store
 Thumbs.db
