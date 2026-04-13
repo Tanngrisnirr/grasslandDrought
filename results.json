@@ -1,0 +1,1135 @@
+{
+  "metadata": {
+    "package": "grasslandDrought",
+    "version": "0.1.0",
+    "timestamp": "2026-04-13T18:19:32",
+    "call": "analyze_treatment(data = data, response = \"RootGrowth\", export_json = \"results.json\")"
+  },
+  "anova": {
+    "table": [
+      {
+        "numDF": 1,
+        "denDF": 171,
+        "F-value": 208.5341,
+        "p-value": 0,
+        "_row": "(Intercept)"
+      },
+      {
+        "numDF": 2,
+        "denDF": 8,
+        "F-value": 0.9585,
+        "p-value": 0.4235,
+        "_row": "treatment"
+      },
+      {
+        "numDF": 19,
+        "denDF": 171,
+        "F-value": 30.0958,
+        "p-value": 0,
+        "_row": "date"
+      },
+      {
+        "numDF": 38,
+        "denDF": 171,
+        "F-value": 2.076,
+        "p-value": 0.0008,
+        "_row": "treatment:date"
+      }
+    ],
+    "terms": ["(Intercept)", "treatment", "date", "treatment:date"]
+  },
+  "emmeans": {
+    "means": [
+      {
+        "treatment": "Ab",
+        "date": "2014-02-24",
+        "emmean": 0.4626,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.4468,
+        "upper.CL": 6.372
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-02-24",
+        "emmean": 0.6867,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.2227,
+        "upper.CL": 6.5961
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-02-24",
+        "emmean": 0.7922,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.1171,
+        "upper.CL": 6.7016
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-03-24",
+        "emmean": 1.3025,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.6069,
+        "upper.CL": 7.2119
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-03-24",
+        "emmean": 2.0956,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.8138,
+        "upper.CL": 8.005
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-03-24",
+        "emmean": 2.3403,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.5691,
+        "upper.CL": 8.2496
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-04-22",
+        "emmean": 2.8088,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.1006,
+        "upper.CL": 8.7182
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-04-22",
+        "emmean": 4.1165,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -1.7929,
+        "upper.CL": 10.0259
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-04-22",
+        "emmean": 5.7205,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -0.1889,
+        "upper.CL": 11.6299
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-05-26",
+        "emmean": 3.4844,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.425,
+        "upper.CL": 9.3938
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-05-26",
+        "emmean": 3.9847,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -1.9247,
+        "upper.CL": 9.8941
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-05-26",
+        "emmean": 3.171,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.7384,
+        "upper.CL": 9.0804
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-06-23",
+        "emmean": 2.6936,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.2158,
+        "upper.CL": 8.603
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-06-23",
+        "emmean": 2.8933,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.0161,
+        "upper.CL": 8.8027
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-06-23",
+        "emmean": 2.4759,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.4335,
+        "upper.CL": 8.3853
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-07-21",
+        "emmean": 1.9574,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.952,
+        "upper.CL": 7.8668
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-07-21",
+        "emmean": 2.3786,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.5307,
+        "upper.CL": 8.288
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-07-21",
+        "emmean": 1.91,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.9994,
+        "upper.CL": 7.8194
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-08-25",
+        "emmean": 4.3871,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -1.5223,
+        "upper.CL": 10.2965
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-08-25",
+        "emmean": 5.2507,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -0.6587,
+        "upper.CL": 11.1601
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-08-25",
+        "emmean": 5.6369,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -0.2725,
+        "upper.CL": 11.5462
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-09-30",
+        "emmean": 4.9598,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -0.9496,
+        "upper.CL": 10.8692
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-09-30",
+        "emmean": 2.2236,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.6858,
+        "upper.CL": 8.133
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-09-30",
+        "emmean": 2.5952,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.3141,
+        "upper.CL": 8.5046
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-10-30",
+        "emmean": 1.8481,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.0613,
+        "upper.CL": 7.7575
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-10-30",
+        "emmean": 2.028,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.8814,
+        "upper.CL": 7.9374
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-10-30",
+        "emmean": 3.1155,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.7939,
+        "upper.CL": 9.0249
+      },
+      {
+        "treatment": "Ab",
+        "date": "2014-12-15",
+        "emmean": 0.6709,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.2385,
+        "upper.CL": 6.5803
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2014-12-15",
+        "emmean": 0.9723,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.9371,
+        "upper.CL": 6.8817
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2014-12-15",
+        "emmean": 0.7433,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.1661,
+        "upper.CL": 6.6527
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-03-02",
+        "emmean": 0.2184,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.691,
+        "upper.CL": 6.1278
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-03-02",
+        "emmean": 0.2025,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.7069,
+        "upper.CL": 6.1119
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-03-02",
+        "emmean": 0.3118,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.5976,
+        "upper.CL": 6.2212
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-03-30",
+        "emmean": 0.1841,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.7253,
+        "upper.CL": 6.0935
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-03-30",
+        "emmean": 0.8964,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.0129,
+        "upper.CL": 6.8058
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-03-30",
+        "emmean": 1.1689,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.7405,
+        "upper.CL": 7.0783
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-04-24",
+        "emmean": 1.343,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.5664,
+        "upper.CL": 7.2524
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-04-24",
+        "emmean": 2.7733,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.1361,
+        "upper.CL": 8.6827
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-04-24",
+        "emmean": 3.2194,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.69,
+        "upper.CL": 9.1288
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-05-29",
+        "emmean": 2.6796,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.2298,
+        "upper.CL": 8.589
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-05-29",
+        "emmean": 2.6561,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.2533,
+        "upper.CL": 8.5655
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-05-29",
+        "emmean": 2.055,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.8544,
+        "upper.CL": 7.9644
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-06-29",
+        "emmean": 0.8064,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.1029,
+        "upper.CL": 6.7158
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-06-29",
+        "emmean": 1.5504,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.359,
+        "upper.CL": 7.4598
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-06-29",
+        "emmean": 1.3379,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.5715,
+        "upper.CL": 7.2473
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-07-24",
+        "emmean": 0.0551,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.8543,
+        "upper.CL": 5.9645
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-07-24",
+        "emmean": 0.2066,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.7028,
+        "upper.CL": 6.116
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-07-24",
+        "emmean": 0.0899,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -5.8195,
+        "upper.CL": 5.9993
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-08-28",
+        "emmean": 1.326,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.5834,
+        "upper.CL": 7.2354
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-08-28",
+        "emmean": 1.4202,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.4892,
+        "upper.CL": 7.3296
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-08-28",
+        "emmean": 1.1861,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.7233,
+        "upper.CL": 7.0955
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-09-25",
+        "emmean": 1.8982,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.0112,
+        "upper.CL": 7.8076
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-09-25",
+        "emmean": 2.0448,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.8646,
+        "upper.CL": 7.9542
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-09-25",
+        "emmean": 2.1186,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.7908,
+        "upper.CL": 8.028
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-10-30",
+        "emmean": 2.2547,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -3.6547,
+        "upper.CL": 8.1641
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-10-30",
+        "emmean": 3.2501,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.6593,
+        "upper.CL": 9.1595
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-10-30",
+        "emmean": 2.9219,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -2.9875,
+        "upper.CL": 8.8313
+      },
+      {
+        "treatment": "Ab",
+        "date": "2015-12-11",
+        "emmean": 1.2091,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.7003,
+        "upper.CL": 7.1185
+      },
+      {
+        "treatment": "Cattle-",
+        "date": "2015-12-11",
+        "emmean": 1.794,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.1154,
+        "upper.CL": 7.7034
+      },
+      {
+        "treatment": "Cattle+",
+        "date": "2015-12-11",
+        "emmean": 1.6058,
+        "SE": 0.4651,
+        "df": 1,
+        "lower.CL": -4.3036,
+        "upper.CL": 7.5152
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-02-24",
+        "estimate": -0.2241,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.3443,
+        "p.value": 0.9372
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-02-24",
+        "estimate": -0.3297,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.5064,
+        "p.value": 0.8703
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-02-24",
+        "estimate": -0.1055,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1621,
+        "p.value": 0.9856
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-03-24",
+        "estimate": -0.7931,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.2184,
+        "p.value": 0.476
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-03-24",
+        "estimate": -1.0378,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.5943,
+        "p.value": 0.3023
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-03-24",
+        "estimate": -0.2447,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.3759,
+        "p.value": 0.9258
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-04-22",
+        "estimate": -1.3077,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -2.0089,
+        "p.value": 0.1721
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-04-22",
+        "estimate": -2.9117,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -4.4729,
+        "p.value": 0.0052
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-04-22",
+        "estimate": -1.604,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -2.464,
+        "p.value": 0.0892
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-05-26",
+        "estimate": -0.5003,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.7685,
+        "p.value": 0.7315
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-05-26",
+        "estimate": 0.3134,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.4815,
+        "p.value": 0.8819
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-05-26",
+        "estimate": 0.8137,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 1.25,
+        "p.value": 0.4594
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-06-23",
+        "estimate": -0.1997,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.3068,
+        "p.value": 0.9498
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-06-23",
+        "estimate": 0.2176,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.3344,
+        "p.value": 0.9407
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-06-23",
+        "estimate": 0.4173,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.6411,
+        "p.value": 0.8024
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-07-21",
+        "estimate": -0.4212,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.6471,
+        "p.value": 0.7991
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-07-21",
+        "estimate": 0.0474,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.0728,
+        "p.value": 0.9971
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-07-21",
+        "estimate": 0.4686,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.7199,
+        "p.value": 0.7591
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-08-25",
+        "estimate": -0.8636,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.3267,
+        "p.value": 0.4206
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-08-25",
+        "estimate": -1.2498,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.9199,
+        "p.value": 0.195
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-08-25",
+        "estimate": -0.3862,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.5932,
+        "p.value": 0.8275
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-09-30",
+        "estimate": 2.7362,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 4.2033,
+        "p.value": 0.0074
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-09-30",
+        "estimate": 2.3645,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 3.6324,
+        "p.value": 0.0163
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-09-30",
+        "estimate": -0.3716,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.5709,
+        "p.value": 0.8389
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-10-30",
+        "estimate": -0.1799,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.2763,
+        "p.value": 0.959
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-10-30",
+        "estimate": -1.2674,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.947,
+        "p.value": 0.1877
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-10-30",
+        "estimate": -1.0876,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.6707,
+        "p.value": 0.2735
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2014-12-15",
+        "estimate": -0.3014,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.463,
+        "p.value": 0.8901
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2014-12-15",
+        "estimate": -0.0724,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1113,
+        "p.value": 0.9932
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2014-12-15",
+        "estimate": 0.2289,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.3517,
+        "p.value": 0.9346
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-03-02",
+        "estimate": 0.0159,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.0244,
+        "p.value": 0.9997
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-03-02",
+        "estimate": -0.0934,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1435,
+        "p.value": 0.9887
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-03-02",
+        "estimate": -0.1093,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1679,
+        "p.value": 0.9846
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-03-30",
+        "estimate": -0.7123,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.0943,
+        "p.value": 0.5436
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-03-30",
+        "estimate": -0.9848,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.5129,
+        "p.value": 0.3354
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-03-30",
+        "estimate": -0.2725,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.4186,
+        "p.value": 0.909
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-04-24",
+        "estimate": -1.4304,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -2.1973,
+        "p.value": 0.1315
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-04-24",
+        "estimate": -1.8764,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -2.8826,
+        "p.value": 0.0482
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-04-24",
+        "estimate": -0.4461,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.6853,
+        "p.value": 0.7783
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-05-29",
+        "estimate": 0.0235,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.0361,
+        "p.value": 0.9993
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-05-29",
+        "estimate": 0.6245,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.9594,
+        "p.value": 0.6208
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-05-29",
+        "estimate": 0.6011,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.9233,
+        "p.value": 0.6417
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-06-29",
+        "estimate": -0.744,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.1429,
+        "p.value": 0.5166
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-06-29",
+        "estimate": -0.5315,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.8165,
+        "p.value": 0.7039
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-06-29",
+        "estimate": 0.2125,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.3264,
+        "p.value": 0.9434
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-07-24",
+        "estimate": -0.1515,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.2327,
+        "p.value": 0.9707
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-07-24",
+        "estimate": -0.0347,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.0534,
+        "p.value": 0.9984
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-07-24",
+        "estimate": 0.1168,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.1794,
+        "p.value": 0.9825
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-08-28",
+        "estimate": -0.0942,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1447,
+        "p.value": 0.9885
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-08-28",
+        "estimate": 0.1398,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.2148,
+        "p.value": 0.975
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-08-28",
+        "estimate": 0.234,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.3595,
+        "p.value": 0.9318
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-09-25",
+        "estimate": -0.1466,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.2252,
+        "p.value": 0.9725
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-09-25",
+        "estimate": -0.2203,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.3385,
+        "p.value": 0.9393
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-09-25",
+        "estimate": -0.0738,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.1133,
+        "p.value": 0.993
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-10-30",
+        "estimate": -0.9954,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.5292,
+        "p.value": 0.3285
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-10-30",
+        "estimate": -0.6672,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -1.025,
+        "p.value": 0.5829
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-10-30",
+        "estimate": 0.3282,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.5042,
+        "p.value": 0.8714
+      },
+      {
+        "contrast": "Ab - (Cattle-)",
+        "date": "2015-12-11",
+        "estimate": -0.5849,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.8985,
+        "p.value": 0.6562
+      },
+      {
+        "contrast": "Ab - (Cattle+)",
+        "date": "2015-12-11",
+        "estimate": -0.3967,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": -0.6094,
+        "p.value": 0.8191
+      },
+      {
+        "contrast": "(Cattle-) - (Cattle+)",
+        "date": "2015-12-11",
+        "estimate": 0.1882,
+        "SE": 0.651,
+        "df": 8,
+        "t.ratio": 0.289,
+        "p.value": 0.9552
+      }
+    ]
+  },
+  "model_summary": {
+    "method": "ML",
+    "n_obs": 240,
+    "n_groups": [12, 2, 1, 1],
+    "logLik": -271.6599,
+    "AIC": 669.3197,
+    "BIC": 888.6
+  }
+}

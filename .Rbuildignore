@@ -1,0 +1,8 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^output$
+^results\.json$
+^test_results\.json$
+^remove_ai_attribution\.sh$
+^\.Rprofile$
+^data$

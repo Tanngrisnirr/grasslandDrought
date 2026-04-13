@@ -1,0 +1,23 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Output files (keep folder, ignore contents)
+output/*.json
+output/*.csv
+!output/.gitkeep
+
+# Data files (users add their own)
+# Keep demo data
+data/*.xlsx
+!data/picon_cochard_2021.xlsx
+!data/README.txt
+
+# Scripts
+remove_ai_attribution.sh
+
+# OS
+.DS_Store
+Thumbs.db
