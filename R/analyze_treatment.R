@@ -159,6 +159,7 @@ export_json_internal <- function(x, path) {
 #'
 #' @param model An lme model object
 #' @return A ggplot object with diagnostic panels
+#' @importFrom rlang .data
 #' @keywords internal
 create_diagnostics <- function(model) {
 
@@ -167,20 +168,20 @@ create_diagnostics <- function(model) {
     residuals = stats::residuals(model)
   )
 
-  p1 <- ggplot2::ggplot(resid_df, ggplot2::aes(x = fitted, y = residuals)) +
+  p1 <- ggplot2::ggplot(resid_df, ggplot2::aes(x = .data$fitted, y = .data$residuals)) +
     ggplot2::geom_point(alpha = 0.5) +
     ggplot2::geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
     ggplot2::labs(x = "Fitted values", y = "Residuals",
                   title = "Residuals vs Fitted") +
     ggplot2::theme_minimal()
 
-  p2 <- ggplot2::ggplot(resid_df, ggplot2::aes(sample = residuals)) +
+  p2 <- ggplot2::ggplot(resid_df, ggplot2::aes(sample = .data$residuals)) +
     ggplot2::stat_qq() +
     ggplot2::stat_qq_line(color = "red") +
     ggplot2::labs(title = "Q-Q Plot") +
     ggplot2::theme_minimal()
 
-  p3 <- ggplot2::ggplot(resid_df, ggplot2::aes(x = residuals)) +
+  p3 <- ggplot2::ggplot(resid_df, ggplot2::aes(x = .data$residuals)) +
     ggplot2::geom_histogram(bins = 20, fill = "steelblue", color = "white") +
     ggplot2::labs(x = "Residuals", y = "Count", title = "Histogram") +
     ggplot2::theme_minimal()

@@ -1,8 +1,8 @@
 Package: grasslandDrought
 Title: Streamlined Analysis of Grassland Drought Effects
-Version: 0.1.0
+Version: 0.1.1
 Authors@R:
-    person("Olivier", "Ruiz", , "hymenopteres.entomo@gmail.com", role = c("aut", "cre"),
+    person("Olivier", "Ruiz", , "bhtn2p5w4@mozmail.com", role = c("aut", "cre"),
            comment = c(ORCID = ""))
 Description: Wraps the nlme::lme() workflow for analyzing grassland drought
     experiments with nested random effects. Provides functions for importing
@@ -20,7 +20,8 @@ Imports:
     emmeans,
     readxl,
     jsonlite,
-    ggplot2
+    ggplot2,
+    rlang
 Suggests:
     patchwork
 URL: https://github.com/Tanngrisnirr/grasslandDrought

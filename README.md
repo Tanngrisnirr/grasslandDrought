@@ -51,6 +51,24 @@ Column names are auto-detected (case-insensitive, common aliases supported).
 | `analyze_treatment()` | Run mixed model analysis |
 | `export_json()` | Export results to JSON |
 
+## Exploratory PCA Analysis
+
+For Principal Component Analysis as performed in Picon-Cochard et al. (2021), use the [FactoMineR](https://cran.r-project.org/package=FactoMineR) package:
+
+```r
+library(FactoMineR)
+
+# Select variables for PCA (adapt to your dataset)
+pca_vars <- c("RSWC", "Tsoil", "Diam", "SRA", "RootMass", "BNPP", "Height", "LDMC", "ANPP")
+pca_data <- data[, pca_vars]
+
+# Run PCA with scaling
+res.pca <- PCA(pca_data, scale.unit = TRUE, graph = TRUE)
+
+# View results
+summary(res.pca)
+```
+
 ## Reference
 
 Based on methodology from:
