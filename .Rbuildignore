@@ -6,3 +6,5 @@
 
 ^\.Rprofile$
 ^data$
+^archive$
+^CRAN_TODO\.txt$

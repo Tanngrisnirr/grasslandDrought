@@ -1,0 +1,37 @@
+CRAN Submission Fixes for grasslandDrought v0.1.1
+=================================================
+
+NOTEs from CRAN pre-tests (2026-04-15):
+- Windows: https://win-builder.r-project.org/incoming_pretest/grasslandDrought_0.1.1_20260415_144048/Windows/00check.log
+- Debian: https://win-builder.r-project.org/incoming_pretest/grasslandDrought_0.1.1_20260415_144048/Debian/00check.log
+
+Tasks to fix:
+-------------
+
+1. [ ] Add '^archive$' to .Rbuildignore
+   - This excludes the archive directory from the built package
+
+2. [ ] Fix GitHub URL in DESCRIPTION
+   - Current URL returns 401 Unauthorized (repo is private)
+   - Either make the repo public OR use a different valid URL
+
+3. [ ] Rebuild the package
+   R CMD build .
+
+4. [ ] Run CRAN checks locally to verify fixes
+   R CMD check --as-cran grasslandDrought_0.1.1.tar.gz
+
+5. [ ] Resubmit to CRAN via webform
+
+Note: The "misspelled words" (Cochard, Picon, RSWC, UREP, et al) are
+author names and acronyms - these are typically accepted by CRAN as-is.
+
+Attribution Enhancement (2026-04-16):
+-------------------------------------
+DONE:
+[x] Added "Demo Data" section to README.md with full Zenodo citation
+[x] Created inst/CITATION file with package, data, and paper citations
+
+TODO (run on ):
+[ ] Rebuild package: R CMD build .
+[ ] Verify citation works: R -e 'citation("grasslandDrought")'
