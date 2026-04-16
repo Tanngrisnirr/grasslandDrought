@@ -17,11 +17,29 @@ results <- analyze_treatment(data, "RootGrowth")
 results <- analyze_treatment(data, "RootGrowth", export_json = "output/results.json")
 ```
 
-**Demo data included:** `data/picon_cochard_2021.xlsx` from [Zenodo](https://zenodo.org/records/4034903) (CC-BY-4.0)
-
 ## Overview
 
 This package wraps the `nlme::lme()` workflow for analyzing grassland experiments with nested random effects (`block/ID`), as used in [Picon-Cochard et al. (2021)](https://doi.org/10.24072/pcjournal.54).
+
+## Demo Data
+
+This package includes demo data from the UREP grassland experiment:
+
+**Source:** Picon-Cochard C, Vassal N, Martin R, Herfurth D, Note P, Louault F (2020).
+Dataset for: Intra and inter-annual climatic conditions have stronger effect than
+grazing intensity on root growth of permanent grasslands [Data set]. Zenodo.
+https://doi.org/10.5281/zenodo.4034903
+
+**License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) — You are free
+to share and adapt this data with attribution.
+
+**Original Study:** Picon-Cochard C, Vassal N, Martin R, Herfurth D, Note P, Louault F
+(2021). Intra and inter-annual climatic conditions have stronger effect than grazing
+intensity on root growth of permanent grasslands. *Peer Community Journal*, 1:e43.
+[doi:10.24072/pcjournal.54](https://doi.org/10.24072/pcjournal.54)
+
+The demo file `data/picon_cochard_2021.xlsx` is redistributed under the terms of the
+CC-BY-4.0 license. We thank the authors for making their data openly available.
 
 **Features:**
 - Auto-detect column names (treatment, block, date, ID)

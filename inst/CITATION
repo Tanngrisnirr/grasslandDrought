@@ -1,0 +1,47 @@
+citHeader("To cite grasslandDrought in publications, please use:")
+
+bibentry(
+  bibtype = "Manual",
+  title = "grasslandDrought: Streamlined Analysis of Grassland Drought Effects",
+  author = person("Olivier", "Ruiz"),
+  year = "2026",
+  note = "R package version 0.1.1",
+  url = "https://github.com/Tanngrisnirr/grasslandDrought"
+)
+
+citHeader("To cite the demo data and methodology, please use:")
+
+bibentry(
+  bibtype = "Misc",
+  title = "Dataset for: Intra and inter-annual climatic conditions have stronger effect than grazing intensity on root growth of permanent grasslands",
+  author = c(
+    person("Catherine", "Picon-Cochard"),
+    person("Nathalie", "Vassal"),
+    person("Raphaël", "Martin"),
+    person("Damien", "Herfurth"),
+    person("Priscilla", "Note"),
+    person("Frédérique", "Louault")
+  ),
+  year = "2020",
+  publisher = "Zenodo",
+  doi = "10.5281/zenodo.4034903",
+  url = "https://zenodo.org/records/4034903"
+)
+
+bibentry(
+  bibtype = "Article",
+  title = "Intra and inter-annual climatic conditions have stronger effect than grazing intensity on root growth of permanent grasslands",
+  author = c(
+    person("Catherine", "Picon-Cochard"),
+    person("Nathalie", "Vassal"),
+    person("Raphaël", "Martin"),
+    person("Damien", "Herfurth"),
+    person("Priscilla", "Note"),
+    person("Frédérique", "Louault")
+  ),
+  journal = "Peer Community Journal",
+  year = "2021",
+  volume = "1",
+  pages = "e43",
+  doi = "10.24072/pcjournal.54"
+)
